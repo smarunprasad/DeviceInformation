@@ -12,13 +12,13 @@
 		F488E02C22C0536300BBC105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F488E02A22C0536300BBC105 /* Main.storyboard */; };
 		F488E02E22C0536700BBC105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488E02D22C0536700BBC105 /* Assets.xcassets */; };
 		F488E03122C0536700BBC105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F488E02F22C0536700BBC105 /* LaunchScreen.storyboard */; };
+		F4E33D4722C2CC88000576A4 /* DeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E33D4622C2CC88000576A4 /* DeviceKit.framework */; };
+		F4E33D4822C2CC8F000576A4 /* DeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E33D4622C2CC88000576A4 /* DeviceKit.framework */; };
+		F4E33D4922C2CC8F000576A4 /* DeviceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4E33D4622C2CC88000576A4 /* DeviceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4E848B822C2AFFF00FD62BF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E848B722C2AFFF00FD62BF /* APIManager.swift */; };
 		F4E848C622C2B8EE00FD62BF /* CryptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C522C2B8EE00FD62BF /* CryptKit.framework */; };
 		F4E848C722C2B8F500FD62BF /* CryptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C522C2B8EE00FD62BF /* CryptKit.framework */; };
 		F4E848C822C2B8F500FD62BF /* CryptKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C522C2B8EE00FD62BF /* CryptKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F4E848CA22C2C3F900FD62BF /* DeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C922C2C3F800FD62BF /* DeviceKit.framework */; };
-		F4E848CB22C2C41200FD62BF /* DeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C922C2C3F800FD62BF /* DeviceKit.framework */; };
-		F4E848CC22C2C41200FD62BF /* DeviceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C922C2C3F800FD62BF /* DeviceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +29,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F4E848C822C2B8F500FD62BF /* CryptKit.framework in Embed Frameworks */,
-				F4E848CC22C2C41200FD62BF /* DeviceKit.framework in Embed Frameworks */,
+				F4E33D4922C2CC8F000576A4 /* DeviceKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,9 +44,9 @@
 		F488E02D22C0536700BBC105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F488E03022C0536700BBC105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F488E03222C0536700BBC105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E33D4622C2CC88000576A4 /* DeviceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeviceKit.framework; sourceTree = "<group>"; };
 		F4E848B722C2AFFF00FD62BF /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		F4E848C522C2B8EE00FD62BF /* CryptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptKit.framework; sourceTree = "<group>"; };
-		F4E848C922C2C3F800FD62BF /* DeviceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeviceKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4E848CA22C2C3F900FD62BF /* DeviceKit.framework in Frameworks */,
+				F4E33D4722C2CC88000576A4 /* DeviceKit.framework in Frameworks */,
 				F4E848C722C2B8F500FD62BF /* CryptKit.framework in Frameworks */,
 				F4E848C622C2B8EE00FD62BF /* CryptKit.framework in Frameworks */,
-				F4E848CB22C2C41200FD62BF /* DeviceKit.framework in Frameworks */,
+				F4E33D4822C2CC8F000576A4 /* DeviceKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 				F488E02D22C0536700BBC105 /* Assets.xcassets */,
 				F488E02F22C0536700BBC105 /* LaunchScreen.storyboard */,
 				F488E03222C0536700BBC105 /* Info.plist */,
-				F4E848C922C2C3F800FD62BF /* DeviceKit.framework */,
+				F4E33D4622C2CC88000576A4 /* DeviceKit.framework */,
 				F4E848C522C2B8EE00FD62BF /* CryptKit.framework */,
 			);
 			path = DeviceInformation;
