@@ -1,0 +1,11 @@
+framework module EncryptedAPIManager {
+  umbrella header "EncryptedAPIManager.h"
+
+  export *
+  module * { export * }
+}
+
+module EncryptedAPIManager.Swift {
+    header "EncryptedAPIManager-Swift.h"
+    requires objc
+}

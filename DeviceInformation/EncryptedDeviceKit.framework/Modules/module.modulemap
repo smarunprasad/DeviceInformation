@@ -1,0 +1,11 @@
+framework module EncryptedDeviceKit {
+  umbrella header "EncryptedDeviceKit.h"
+
+  export *
+  module * { export * }
+}
+
+module EncryptedDeviceKit.Swift {
+    header "EncryptedDeviceKit-Swift.h"
+    requires objc
+}
