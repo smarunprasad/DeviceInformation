@@ -1,0 +1,4 @@
+framework module CryptKit {
+  header "CryptKit-Swift.h"
+  requires objc
+}

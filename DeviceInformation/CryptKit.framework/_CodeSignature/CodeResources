@@ -4,66 +4,66 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/EncryptedAPIManager-Swift.h</key>
+		<key>Headers/CryptKit-Swift.h</key>
 		<data>
-		y/r4lucmHwX7+uM8tcTNEdDogKU=
+		o5RebKRHUlWs2/5w8Lkt17HwtK8=
 		</data>
-		<key>Headers/EncryptedAPIManager.h</key>
+		<key>Headers/CryptManager.h</key>
 		<data>
-		bi3Ub9HODsVIG7kLwOk1G6J1Frs=
+		FSEFCdDWjyqHIjLYHY6S17mNcks=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EIK6PKK0hzXgKy5CiJ0arv3CQfs=
+		87giZ9zPgpmnC87vk0fETGTA/r8=
 		</data>
-		<key>Modules/EncryptedAPIManager.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/CryptKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		BbucZkArNKPnjl4S7gUC29PH/yw=
+		Ed356ALLso0DQ0jOJvmV1EOKVqg=
 		</data>
-		<key>Modules/EncryptedAPIManager.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/CryptKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		WuBomqPHrdysZ1u03bHXCbMCFRA=
+		leJMlnlF+KQ5JekHIA7alQ3DYC4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		T2QOW7sOu5jJ1Wh40yovqa+OvSY=
+		win5CZPr1nKr93sSw56Nee4O+kM=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/EncryptedAPIManager-Swift.h</key>
+		<key>Headers/CryptKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K+/8arOtApEuzDeCM1Nn0DtlyOl8c2SFGbtcg8pkviM=
+			Ax8T5BWt6JYZXstypFU5mqeIuEmfJuFH6gh3Tv9XdFM=
 			</data>
 		</dict>
-		<key>Headers/EncryptedAPIManager.h</key>
+		<key>Headers/CryptManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ilam6wTcSmmgjtXglLEFsPRv30+wG8ro1/cs3/dG4lA=
+			keuluHj4Tqqo2uVGUkckyv4aTZS2Ti2v+AfGAiVqZnI=
 			</data>
 		</dict>
-		<key>Modules/EncryptedAPIManager.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/CryptKit.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1ppIfpD/RUdmFPsrQ+6bjKd6lwQb15vMuZU7Kt+AmeQ=
+			t6s5+wfPrxIaY3RQopiLbEFuhxAMWsdeM7wMAuywA6o=
 			</data>
 		</dict>
-		<key>Modules/EncryptedAPIManager.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/CryptKit.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D2DUVhUqKV2TNhj3Dsp24RJCOul/GTrmR15S1ELcg5I=
+			6Ynkm47FGYbwFtW+l4N9bsGZukm6TMfeKrBm4WopwKY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y2amUIEyBxvi4PSlkc25LCFfdXFHDYms126E2ieBxSA=
+			ay6aAD5EIOw40qi+kOxnNCWn4CnLJHx7dOW2Kod3ong=
 			</data>
 		</dict>
 	</dict>

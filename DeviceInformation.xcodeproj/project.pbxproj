@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4166AE622C19D3E00934E44 /* EncryptedDeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4166AE522C19D3E00934E44 /* EncryptedDeviceKit.framework */; };
-		F4166AE722C19D4A00934E44 /* EncryptedDeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4166AE522C19D3E00934E44 /* EncryptedDeviceKit.framework */; };
-		F4166AE822C19D4A00934E44 /* EncryptedDeviceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4166AE522C19D3E00934E44 /* EncryptedDeviceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F488E02722C0536300BBC105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488E02622C0536300BBC105 /* AppDelegate.swift */; };
 		F488E02922C0536300BBC105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488E02822C0536300BBC105 /* ViewController.swift */; };
 		F488E02C22C0536300BBC105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F488E02A22C0536300BBC105 /* Main.storyboard */; };
 		F488E02E22C0536700BBC105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F488E02D22C0536700BBC105 /* Assets.xcassets */; };
 		F488E03122C0536700BBC105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F488E02F22C0536700BBC105 /* LaunchScreen.storyboard */; };
-		F4B5D2A722C2304800B63448 /* EncryptedAPIManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5D2A622C2304800B63448 /* EncryptedAPIManager.framework */; };
-		F4B5D2A822C2305000B63448 /* EncryptedAPIManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5D2A622C2304800B63448 /* EncryptedAPIManager.framework */; };
-		F4B5D2A922C2305000B63448 /* EncryptedAPIManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5D2A622C2304800B63448 /* EncryptedAPIManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4E848B822C2AFFF00FD62BF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E848B722C2AFFF00FD62BF /* APIManager.swift */; };
+		F4E848C622C2B8EE00FD62BF /* CryptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C522C2B8EE00FD62BF /* CryptKit.framework */; };
+		F4E848C722C2B8F500FD62BF /* CryptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C522C2B8EE00FD62BF /* CryptKit.framework */; };
+		F4E848C822C2B8F500FD62BF /* CryptKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C522C2B8EE00FD62BF /* CryptKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4E848CA22C2C3F900FD62BF /* DeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C922C2C3F800FD62BF /* DeviceKit.framework */; };
+		F4E848CB22C2C41200FD62BF /* DeviceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C922C2C3F800FD62BF /* DeviceKit.framework */; };
+		F4E848CC22C2C41200FD62BF /* DeviceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4E848C922C2C3F800FD62BF /* DeviceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +28,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F4B5D2A922C2305000B63448 /* EncryptedAPIManager.framework in Embed Frameworks */,
-				F4166AE822C19D4A00934E44 /* EncryptedDeviceKit.framework in Embed Frameworks */,
+				F4E848C822C2B8F500FD62BF /* CryptKit.framework in Embed Frameworks */,
+				F4E848CC22C2C41200FD62BF /* DeviceKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,7 +37,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F4166AE522C19D3E00934E44 /* EncryptedDeviceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EncryptedDeviceKit.framework; sourceTree = "<group>"; };
 		F488E02322C0536300BBC105 /* DeviceInformation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceInformation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F488E02622C0536300BBC105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F488E02822C0536300BBC105 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,7 +44,9 @@
 		F488E02D22C0536700BBC105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F488E03022C0536700BBC105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F488E03222C0536700BBC105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4B5D2A622C2304800B63448 /* EncryptedAPIManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EncryptedAPIManager.framework; sourceTree = "<group>"; };
+		F4E848B722C2AFFF00FD62BF /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F4E848C522C2B8EE00FD62BF /* CryptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptKit.framework; sourceTree = "<group>"; };
+		F4E848C922C2C3F800FD62BF /* DeviceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeviceKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B5D2A822C2305000B63448 /* EncryptedAPIManager.framework in Frameworks */,
-				F4B5D2A722C2304800B63448 /* EncryptedAPIManager.framework in Frameworks */,
-				F4166AE622C19D3E00934E44 /* EncryptedDeviceKit.framework in Frameworks */,
-				F4166AE722C19D4A00934E44 /* EncryptedDeviceKit.framework in Frameworks */,
+				F4E848CA22C2C3F900FD62BF /* DeviceKit.framework in Frameworks */,
+				F4E848C722C2B8F500FD62BF /* CryptKit.framework in Frameworks */,
+				F4E848C622C2B8EE00FD62BF /* CryptKit.framework in Frameworks */,
+				F4E848CB22C2C41200FD62BF /* DeviceKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,12 +85,13 @@
 			children = (
 				F488E02622C0536300BBC105 /* AppDelegate.swift */,
 				F488E02822C0536300BBC105 /* ViewController.swift */,
+				F4E848B722C2AFFF00FD62BF /* APIManager.swift */,
 				F488E02A22C0536300BBC105 /* Main.storyboard */,
 				F488E02D22C0536700BBC105 /* Assets.xcassets */,
 				F488E02F22C0536700BBC105 /* LaunchScreen.storyboard */,
 				F488E03222C0536700BBC105 /* Info.plist */,
-				F4B5D2A622C2304800B63448 /* EncryptedAPIManager.framework */,
-				F4166AE522C19D3E00934E44 /* EncryptedDeviceKit.framework */,
+				F4E848C922C2C3F800FD62BF /* DeviceKit.framework */,
+				F4E848C522C2B8EE00FD62BF /* CryptKit.framework */,
 			);
 			path = DeviceInformation;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E848B822C2AFFF00FD62BF /* APIManager.swift in Sources */,
 				F488E02922C0536300BBC105 /* ViewController.swift in Sources */,
 				F488E02722C0536300BBC105 /* AppDelegate.swift in Sources */,
 			);
