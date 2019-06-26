@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DeviceInformation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="DeviceInformation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,19 +41,19 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gAP-gU-Nkl">
-                                <rect key="frame" x="40" y="84" width="334" height="150"/>
+                                <rect key="frame" x="40" y="84" width="334" height="180"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHv-9Y-7wS">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqx-fa-Xe9">
-                                                <rect key="frame" x="0.0" y="0.0" width="292" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="45"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_untick" highlightedImage="icon_tick" translatesAutoresizingMaskIntoConstraints="NO" id="Vnt-Kt-TTu">
-                                                <rect key="frame" x="304" y="10" width="30" height="30"/>
+                                                <rect key="frame" x="304" y="7.5" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="8rU-pn-iP5"/>
                                                     <constraint firstAttribute="width" constant="30" id="VzQ-H6-l5p"/>
@@ -71,16 +71,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nco-Zk-546">
-                                        <rect key="frame" x="0.0" y="50" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="45" width="334" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Info Encryption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvH-az-KRu">
-                                                <rect key="frame" x="0.0" y="0.0" width="292" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="45"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_untick" highlightedImage="icon_tick" translatesAutoresizingMaskIntoConstraints="NO" id="nO6-1s-QVU">
-                                                <rect key="frame" x="304" y="10" width="30" height="30"/>
+                                                <rect key="frame" x="304" y="7.5" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="1xz-CE-r8c"/>
                                                     <constraint firstAttribute="width" constant="30" id="pIo-Xc-8a7"/>
@@ -97,17 +97,44 @@
                                             <constraint firstItem="nO6-1s-QVU" firstAttribute="centerY" secondItem="nco-Zk-546" secondAttribute="centerY" id="sH3-6p-qjb"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQY-v5-ije">
+                                        <rect key="frame" x="0.0" y="90" width="334" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Info Decryption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjZ-8u-9bt">
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="45"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_untick" highlightedImage="icon_tick" translatesAutoresizingMaskIntoConstraints="NO" id="JAr-6b-cvH">
+                                                <rect key="frame" x="304" y="7.5" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="HUg-sS-fug"/>
+                                                    <constraint firstAttribute="height" constant="30" id="IZb-Bq-s1d"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="UjZ-8u-9bt" firstAttribute="top" secondItem="RQY-v5-ije" secondAttribute="top" id="61t-sh-RHW"/>
+                                            <constraint firstItem="JAr-6b-cvH" firstAttribute="leading" secondItem="UjZ-8u-9bt" secondAttribute="trailing" constant="12" id="BGb-bk-vG0"/>
+                                            <constraint firstItem="UjZ-8u-9bt" firstAttribute="leading" secondItem="RQY-v5-ije" secondAttribute="leading" id="LHF-iR-vay"/>
+                                            <constraint firstAttribute="bottom" secondItem="UjZ-8u-9bt" secondAttribute="bottom" id="ZYb-TH-VRN"/>
+                                            <constraint firstItem="JAr-6b-cvH" firstAttribute="centerY" secondItem="RQY-v5-ije" secondAttribute="centerY" id="pxh-BX-hxX"/>
+                                            <constraint firstAttribute="trailing" secondItem="JAr-6b-cvH" secondAttribute="trailing" id="vfN-zh-1B8"/>
+                                        </constraints>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLF-hT-Wcw">
-                                        <rect key="frame" x="0.0" y="100" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="135" width="334" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="API Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8G-AT-QTK">
-                                                <rect key="frame" x="0.0" y="0.0" width="292" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="45"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_untick" highlightedImage="icon_tick" translatesAutoresizingMaskIntoConstraints="NO" id="aGG-13-czm">
-                                                <rect key="frame" x="304" y="10" width="30" height="30"/>
+                                                <rect key="frame" x="304" y="7.5" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="DhW-t3-00A"/>
                                                     <constraint firstAttribute="width" constant="30" id="f5r-8M-Oql"/>
@@ -126,17 +153,17 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="z83-9U-waz"/>
+                                    <constraint firstAttribute="height" constant="180" id="z83-9U-waz"/>
                                 </constraints>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RhR-jf-mGi">
-                                <rect key="frame" x="30" y="284" width="354" height="482"/>
+                                <rect key="frame" x="30" y="314" width="354" height="452"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eU-y2-ant">
-                                <rect key="frame" x="30" y="262.5" width="23" height="13.5"/>
+                                <rect key="frame" x="30" y="292.5" width="23" height="13.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -163,8 +190,9 @@
                     </view>
                     <connections>
                         <outlet property="apiImageView" destination="aGG-13-czm" id="UI0-MS-zbs"/>
+                        <outlet property="decryptionImageView" destination="JAr-6b-cvH" id="LTW-IK-fep"/>
                         <outlet property="deviceInfoImageView" destination="Vnt-Kt-TTu" id="E0n-Wt-S3j"/>
-                        <outlet property="encryptionImageView" destination="nO6-1s-QVU" id="oz5-0x-DDM"/>
+                        <outlet property="encryptionImageView" destination="nO6-1s-QVU" id="YFu-S2-Dsd"/>
                         <outlet property="logTextView" destination="RhR-jf-mGi" id="9gf-TV-aTQ"/>
                     </connections>
                 </viewController>

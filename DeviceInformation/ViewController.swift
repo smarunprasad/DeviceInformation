@@ -30,9 +30,8 @@ class ViewController: UIViewController {
     
     //Outlets
     @IBOutlet weak var deviceInfoImageView: UIImageView!
-    
     @IBOutlet weak var encryptionImageView: UIImageView!
-    
+    @IBOutlet weak var decryptionImageView: UIImageView!
     @IBOutlet weak var apiImageView: UIImageView!
     @IBOutlet weak var logTextView: UITextView!
     
@@ -73,11 +72,19 @@ class ViewController: UIViewController {
         //Encryption
         //////////////
         deviceData = encryptData(data: data)
-        self.logString += "\nEncrypted device info data\n"
+        self.logString += "\n\nEncrypted device info data\n"
         self.loadLogInTextView(value: self.deviceData)
         self.encryptionImageView.isHighlighted = true
         
         //4
+        self.logString += "\n\nDecrypted device info data for testing\n"
+        let decryptString = String.init(data: decryptData(data: deviceData), encoding: .utf8)
+        
+        self.loadLogInTextView(value: decryptString as Any)
+        self.decryptionImageView.isHighlighted = true
+
+        
+        //5
         //Sending the device data and static values to the API
         //////////////
         callCustomerAPI()
@@ -94,6 +101,8 @@ class ViewController: UIViewController {
             self.deviceInfoImageView.isHighlighted = false
             self.encryptionImageView.isHighlighted = false
             self.apiImageView.isHighlighted = false
+            self.decryptionImageView.isHighlighted = false
+            
         }, completion: nil)
     }
 }
@@ -168,10 +177,10 @@ extension ViewController {
         
         APIManager.dataRequest(request: urlRequest, completionHandler: { (data) in
             
-            self.logString += "\n Response data\n"
+            self.logString += "\n\nResponse data\n"
             self.loadLogInTextView(value: data)
             
-            self.logString += "\n Response String\n"
+            self.logString += "\n\nResponse String\n"
             self.loadLogInTextView(value: String.init(data: data, encoding: .utf8) as Any)
             
             DispatchQueue.main.async {
